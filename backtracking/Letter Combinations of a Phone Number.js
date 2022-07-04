@@ -19,7 +19,6 @@ var letterCombinations = function (digits) {
 			result.push(str);
 			return;
 		}
-
 		const alpha = alphas[digits[index]];
 		for (let i = 0; i < alpha.length; i++) {
 			dfs(digits, index + 1, str + alpha[i]);
@@ -29,3 +28,5 @@ var letterCombinations = function (digits) {
 	dfs(digits, 0, '');
 	return result;
 };
+
+letterCombinations('23'); //?
