@@ -13,8 +13,16 @@ var connect = function (root) {
 			arr.push(curr);
 			count--;
 		}
-
+		cont.push(...arr);
 		helper(arr);
+	}
+
+	for (let i = 0; i < cont.length; i++) {
+		if (!cont[i].next) {
+			const te = cont.slice(i + 1);
+			cont[i + 1] = '#';
+			cont.concat();
+		}
 	}
 };
 
