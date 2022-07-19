@@ -15,7 +15,7 @@ var longestPalindrome = function (str) {
 		}
 	}
 
-	return oddMax > 0 ? count - 1 : str.length;
+	return oddMax > 0 ? count - oddMax + 1 : count;
 };
 
 longestPalindrome('a'); //?
