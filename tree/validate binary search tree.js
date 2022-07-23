@@ -10,7 +10,6 @@ var isValidBST = function (root) {
 			if (node.right.val <= node.val) return false;
 			dfs(node.right);
 		}
-
 		return true;
 	}
 
