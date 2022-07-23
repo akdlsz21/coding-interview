@@ -1,4 +1,5 @@
 var floodFill = function (image, sr, sc, color) {
+	if (image[sr][sc] === color) return image;
 	const initialSrScVal = image[sr][sc];
 	function helper(sr, sc) {
 		if (
@@ -25,7 +26,7 @@ floodFill(
 		[0, 0, 0],
 		[0, 0, 0],
 	],
-	1,
-	1,
-	2
+	0,
+	0,
+	0
 ); //?

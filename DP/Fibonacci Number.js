@@ -9,5 +9,7 @@ var fib = function (n) {
 		map[n] = helper(n - 1) + helper(n - 2);
 		return map[n];
 	}
-	return helper(n - 1) + helper(n - 2);
+	return helper(n);
 };
+
+fib(1); //?
